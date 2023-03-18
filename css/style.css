@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+#control-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Dark Mode Styles */
+.dark-mode {
+  background-color: #212121;
+  color: #f1f1f1;
+}
+
+.dark-mode .navigation {
+  background-color: #212121;
+  color: #f1f1f1;
+}
+
+.dark-mode .content {
+  background-color: #212121;
+  color: #f1f1f1;
+}
+
+.dark-mode .content h1 {
+  color: #f1f1f1;
+}
+
+.dark-mode .home-articles {
+  background-color: #212121;
+  color: #f1f1f1;
+}
+
+.dark-mode .year-box {
+  background-color: #212121;
+  color: #f1f1f1;
+}
+
+
+  #dark-mode-toggle {
+  position: relative;
+  appearance: none;
+  width: 3rem;
+  height: 1.5rem;
+  background-color: #ccc;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  }
+  
+  #dark-mode-toggle:checked {
+  background-color: #222;
+  }
+
+  #dark-model-toggle .nav-left ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  #dark-mode-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  }
+  
+  #dark-mode-toggle:checked::before {
+  transform: translateX(1.5rem);
+  }
+  #dark-mode-toggle nav-left {
+    color: rgb(243, 241, 241);
+  }
+  
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  /* height: 74px;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left span {
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 23px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image: url("../img/sec.png");
+  position: absolute;
+  min-width: 250px;
+  width: 100%;
+  height: inherit;
+  opacity: 10%;
+  /* border-radius: 12px; */
+}
+
+.content::after img{
+  min-width: 250px;
+  /* border-radius: 12px; */
+}
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px;
+  z-index: 1;
+}
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 355px;
+  border: 2px solid black;
+  /* border-radius: 200px; */
+}
+
+.home-articles {
+  padding: 18px;
+  background-color: rgb(248, 239, 239, 0.5);
+  margin-top: 23px;
+  position: relative;
+}
+
+.year-box {
+  position: absolute;  
+  right: 0px;
+  top: 100px;
+  width: 234px;
+  height: 255px;
+  font-size: 18px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+
+.home-article img {
+  width: 300px;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+/* .home-articles{} */
+.footer {
+  height: 50px;
+  background-color: #a43535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(2, 2, 2);
+  flex-direction: column;
+}
+
+.footer a {
+  color: rgb(0, 0, 0);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+#control-panel {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.cp-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cp-item label {
+  margin-left: 5px;
+}
+
+#battery-status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+.text-only img,
+.text-only video,
+.text-only audio,
+.text-only iframe,
+.text-only object,
+.text-only embed,
+.text-only svg,
+.text-only canvas {
+    display: none;
+}
+
+
